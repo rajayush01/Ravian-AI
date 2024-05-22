@@ -1,0 +1,9 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "@typescript-eslint/quotes": "off",
+    "quotes": ["off"],  // Disable quotes rule entirely
+    "no-useless-escape": "off"  // Disable no-useless-escape rule
+  }
+}
