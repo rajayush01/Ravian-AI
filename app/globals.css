@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  body {
+    @apply inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)];
+  }
+} */
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+/* .animate-flicker {
+  animation: flicker 2s infinite;
+}
+
+@keyframes borderAnimation {
+  0%, 100% {
+    border-color: #ffffff;
+  }
+  50% {
+    border-color: #5c5f72;
+  }
+}
+.animate-border {
+  animation: borderAnimation 2s infinite;
+} */
+
+@keyframes round-move {
+  0% {
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    transform: translate(0, 0);
+  }
+  25% {
+    border-radius: 50% 50% 30% 30% / 30% 30% 50% 50%;
+    transform: translate(5px, 5px);
+  }
+  50% {
+    border-radius: 30% 30% 30% 30% / 50% 50% 30% 30%;
+    transform: translate(0, 10px);
+  }
+  75% {
+    border-radius: 30% 30% 50% 50% / 30% 30% 50% 50%;
+    transform: translate(-5px, 5px);
+  }
+  100% {
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    transform: translate(0, 0);
+  }
+}
+
+.animate-round-move {
+  animation: round-move 4s infinite;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 2px;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
